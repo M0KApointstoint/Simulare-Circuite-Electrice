@@ -1,0 +1,105 @@
+
+**** 05/15/26 11:08:12 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit 4
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+* Mocanu Cristian-Lucian, 314CB
+V1 2 1 12
+V3 6 5 4
+VCom 0 1 0
+H2 4 6 VCom 2
+I4 3 0 4
+R1 2 3 2
+R2 3 4 1
+R3 3 5 4
+R5 0 6 2
+*
+.DC V1 12 12 1
+.PRINT DC I(R1) I(R2) I(R3) I(R5) V(I4)
+.OP
+.END
+
+**** 05/15/26 11:08:12 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit 4
+
+
+ ****     DC TRANSFER CURVES               TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  V1          I(R1)       I(R2)       I(R3)       I(R5)       V(I4)       
+
+   1.200E+01   3.750E+00  -2.500E+00   2.250E+00   2.500E-01   4.500E+00
+
+
+
+**** 05/15/26 11:08:12 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit 4
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    0.0000  (    2)   12.0000  (    3)    4.5000  (    4)    7.0000      
+
+(    5)   -4.5000  (    6)    -.5000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1          -3.750E+00
+    V3          -2.250E+00
+    VCom         3.750E+00
+
+    TOTAL POWER DISSIPATION   5.40E+01  WATTS
+
+
+**** 05/15/26 11:08:12 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit 4
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** CURRENT-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         H2        
+V-SOURCE     7.500E+00
+I-SOURCE    -2.500E+00
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+
