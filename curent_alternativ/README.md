@@ -26,3 +26,8 @@ LNume Nod1 Nod2 Valoare
 
 - Pentru afisare, treubie tinut cont de proprietatile numerelor complexe.
 
+- Frecventa se impune dupa comanda .AC.
+
+- Pentru domeniul de frecventa, trebuie specificat tipul de parcurgere:
+LIN, DEC, sau OCT.
+
