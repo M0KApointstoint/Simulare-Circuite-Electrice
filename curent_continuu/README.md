@@ -24,3 +24,15 @@ V_nume N3 N4 [DC] valoare
 
 I_nume N5 N6 [DC] valoare
 
+**Observatii:**
+
+- Spice e case-insensitive.
+
+- Factorii de scala sunt riscanti, pot induce in eroare.
+
+- Trebuie pus .END la final.
+
+- Este recomandatata utilizarea .PRINT si .DC.
+
+*Cod care contine cat mai mult: circuit3.cir.*
+
