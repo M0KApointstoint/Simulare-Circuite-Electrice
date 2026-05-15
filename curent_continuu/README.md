@@ -1,4 +1,4 @@
-# Cateva notite:
+# Simulare circuite de curent continuu:
 
 ## Declaratii de elemente:
 
@@ -79,6 +79,4 @@ Se adauga V_comanda cu tensiune 0V cu simbol in sens contrar data curent I (nu s
 - Trebuie pus .END la final.
 
 - Este recomandatata utilizarea .PRINT si .DC.
-
-*Cod care contine cat mai mult: circuit3.cir.*
 
