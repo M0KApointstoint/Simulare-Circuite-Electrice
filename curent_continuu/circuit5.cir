@@ -1,0 +1,17 @@
+Circuit 5
+* Mocanu Cristian-Lucian, 314CB
+V1 1 0 78
+E3 4 3 2 0 0.5
+I2 0 2 6
+VCom 6 0 0
+F5 4 5 VCom 0.5
+R1 1 2 5
+R3 2 3 4
+R4 4 6 3
+R5 5 0 2
+*
+.DC V1 78 78 1
+.PRINT DC I(R1) I(R3) I(R4) I(R5) V(I2)
+.OP
+.END
+

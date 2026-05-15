@@ -1,0 +1,111 @@
+
+**** 05/15/26 11:23:06 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit 5
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+* Mocanu Cristian-Lucian, 314CB
+V1 1 0 78
+E3 4 3 2 0 0.5
+I2 0 2 6
+VCom 6 0 0
+F5 4 5 VCom 0.5
+R1 1 2 5
+R3 2 3 4
+R4 4 6 3
+R5 5 0 2
+*
+.DC V1 78 78 1
+.PRINT DC I(R1) I(R3) I(R4) I(R5) V(I2)
+.OP
+.END
+
+**** 05/15/26 11:23:06 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit 5
+
+
+ ****     DC TRANSFER CURVES               TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  V1          I(R1)       I(R3)       I(R4)       I(R5)       V(I2)       
+
+   7.800E+01   6.000E+00   1.200E+01   8.000E+00   4.000E+00  -4.800E+01
+
+
+
+**** 05/15/26 11:23:06 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit 5
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)   78.0000  (    2)   48.0000  (    3)-21.33E-12  (    4)   24.0000      
+
+(    5)    8.0000  (    6)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1          -6.000E+00
+    VCom         8.000E+00
+
+    TOTAL POWER DISSIPATION   4.68E+02  WATTS
+
+
+**** 05/15/26 11:23:06 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit 5
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         E3        
+V-SOURCE     2.400E+01
+I-SOURCE    -1.200E+01
+
+
+**** CURRENT-CONTROLLED CURRENT SOURCES
+
+
+NAME         F5        
+I-SOURCE     4.000E+00
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+
