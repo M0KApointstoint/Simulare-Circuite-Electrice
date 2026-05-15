@@ -1,0 +1,93 @@
+
+**** 05/16/26 00:30:47 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit 3
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+* Mocanu Cristian-Lucian, 314CB
+V1 1 0 AC 20 -45
+V2 5 0 AC 60 45
+R 4 5 10
+L1 1 2 0.031831
+L2 2 4 0.095493
+C 2 0 0.000159155
+*
+.AC LIN 1 50 50
+.PRINT AC I(L1) IP(L1) I(C) IP(C) I(R) IP(R)
+.END
+
+**** 05/16/26 00:30:47 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit 3
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    0.0000  (    2)    0.0000  (    4)    0.0000  (    5)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1           0.000E+00
+    V2           0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 05/16/26 00:30:47 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit 3
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        I(L1)       IP(L1)      I(C)        IP(C)       I(R)        
+
+
+   5.000E+01   2.000E+00   1.350E+02   1.414E+00   9.000E+01   1.414E+00
+
+**** 05/16/26 00:30:47 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit 3
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        IP(R)       
+
+
+   5.000E+01  -1.800E+02
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

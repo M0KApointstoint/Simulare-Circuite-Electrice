@@ -1,0 +1,13 @@
+Circuit 3
+* Mocanu Cristian-Lucian, 314CB
+V1 1 0 AC 20 -45
+V2 5 0 AC 60 45
+R 4 5 10
+L1 1 2 0.031831
+L2 2 4 0.095493
+C 2 0 0.000159155
+*
+.AC LIN 1 50 50
+.PRINT AC I(L1) IP(L1) I(C) IP(C) I(R) IP(R)
+.END
+
